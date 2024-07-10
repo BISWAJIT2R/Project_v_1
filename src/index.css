@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.home-layout {
+    @apply h-screen bg-slate-400 w-full max-w-[100vw] grid grid-cols-5 grid-rows-7 gap-2 p-2;
+}
+
+.top-bar {
+    @apply relative col-span-5 bg-white flex-between px-5 py-2;
+}
+
+.side-bar {
+    @apply relative row-span-6 row-start-2 ;
+}
+
+.outlet {
+    @apply relative col-span-4 row-span-6 row-start-2 bg-yellow-200;
+}
+
+.flex-between {
+    @apply flex justify-between items-center;
+}
+
+.font-base {
+    @apply text-[18px] font-bold ; 
+}
