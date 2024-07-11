@@ -1,8 +1,12 @@
-import React from 'react'
+import Column from "../components/Column"
+
 
 const Bookings = () => {
   return (
-    <div>Bookings</div>
+    <div className="overflow-scroll">
+      <Column/>
+    </div>
+    
   )
 }
 

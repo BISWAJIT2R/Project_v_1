@@ -25,3 +25,7 @@
 .font-base {
     @apply text-[18px] font-bold ; 
 }
+
+.custom-column {
+    @apply h-full w-full relative grid grid-cols-9 bg-blue-700 gap-3 items-center px-5;
+}

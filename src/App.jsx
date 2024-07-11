@@ -1,10 +1,9 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import AuthLayout from "./Auth/AuthLayout";
-import Loader from "./components/Loader";
 import Login from "./Auth/Login";
 import SignUp from "./Auth/SignUp";
 import HomeLayout from "./pages/HomeLayout";
-import Home from "./pages/Home";
+import Home, { HomeLoader } from "./pages/Home";
 import Bookings from "./pages/Bookings";
 import Users from "./pages/Users";
 import Settings from "./pages/Settings";
@@ -38,14 +37,19 @@ const router = createBrowserRouter([
       {
         path: "home",
         element: <Home />,
+        loader: HomeLoader
       },
       {
         index: true,
         element: <Home />,
+        // loader: HomeLoader
       },
       {
         path: "booking",
         element: <Bookings />,
+        children: [
+          
+        ]
       },
       {
         path: "users",
