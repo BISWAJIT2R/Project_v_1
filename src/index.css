@@ -3,29 +3,46 @@
 @tailwind utilities;
 
 .home-layout {
-    @apply h-screen bg-slate-400 w-full max-w-[100vw] grid grid-cols-5 grid-rows-7 gap-2 p-2;
+  @apply h-screen bg-slate-400 w-full max-w-[100vw] grid grid-cols-5 grid-rows-7 gap-2 p-2;
 }
 
 .top-bar {
-    @apply relative col-span-5 bg-white flex-between px-5 py-2;
+  @apply relative col-span-5 bg-white flex-between px-5 py-2;
 }
 
 .side-bar {
-    @apply relative row-span-6 row-start-2 ;
+  @apply relative row-span-6 row-start-2 border-r-2 border-black;
 }
 
 .outlet {
-    @apply relative col-span-4 row-span-6 row-start-2 bg-yellow-200;
+  @apply relative col-span-4 row-span-6 row-start-2;
 }
 
 .flex-between {
-    @apply flex justify-between items-center;
+  @apply flex justify-between items-center;
 }
 
 .font-base {
-    @apply text-[18px] font-bold ; 
+  @apply text-[18px] font-bold;
 }
 
 .custom-column {
-    @apply h-full w-full relative grid grid-cols-9 bg-blue-700 gap-3 items-center px-5;
+  @apply h-[10%] w-full relative grid grid-cols-7  gap-3 items-center;
+}
+
+.cabins {
+  @apply flex h-full w-full relative  flex-col items-center justify-between;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, and Opera */
+}
+
+.button {
+    @apply px-7 py-2 rounded-xl uppercase cursor-pointer;
 }

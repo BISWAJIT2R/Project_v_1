@@ -14,13 +14,10 @@ export const linkArray = [
 export { TopBar, SideBar, Pages };
 
 export const items = [
-  " id",
-  "created",
   "name",
-  "discount",
-  "description",
   "image",
   "isAvailable",
   "maxCapacity",
   "price",
+  "Discount"
 ];

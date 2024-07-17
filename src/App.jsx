@@ -28,6 +28,10 @@ const router = createBrowserRouter([
         path: "register",
         element: <SignUp />,
       },
+      {
+       index: true,
+        element: <SignUp />,
+      },
     ],
   },
   {
@@ -47,6 +51,7 @@ const router = createBrowserRouter([
       {
         path: "booking",
         element: <Bookings />,
+        // loader: CabinsLoader,
         children: [
           
         ]

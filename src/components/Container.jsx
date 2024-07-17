@@ -2,7 +2,7 @@ import React from "react";
 
 const Container = ({ children }) => {
   return <div className="relative h-full
-   w-full bg-red-500 overflow-scroll">{children}</div>;
+   w-full  overflow-scroll px-5">{children}</div>;
 };
 
 export default Container;
