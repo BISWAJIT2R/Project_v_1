@@ -3,19 +3,19 @@
 @tailwind utilities;
 
 .home-layout {
-  @apply h-screen bg-slate-400 w-full max-w-[100vw] grid grid-cols-5 grid-rows-7 gap-2 p-2;
+  @apply h-screen bg-slate-500 w-full max-w-[100vw] grid grid-cols-5 grid-rows-8 gap-2 p-2 overflow-hidden;
 }
 
 .top-bar {
-  @apply relative col-span-5 bg-white flex-between px-5 py-2;
+  @apply relative col-span-5 bg-[#000322] flex-between px-5 py-2;
 }
 
 .side-bar {
-  @apply relative row-span-6 row-start-2 border-r-2 border-black;
+  @apply relative row-span-7 row-start-2 border-r-2 border-black;
 }
 
 .outlet {
-  @apply relative col-span-4 row-span-6 row-start-2;
+  @apply relative col-span-4 row-span-7 row-start-2;
 }
 
 .flex-between {
@@ -27,11 +27,11 @@
 }
 
 .custom-column {
-  @apply h-[10%] w-full relative grid grid-cols-7  gap-3 items-center;
+  @apply column-sm;
 }
 
 .cabins {
-  @apply flex h-full w-full relative  flex-col items-center justify-between;
+  @apply flex  w-full relative  flex-col items-center justify-between overflow-scroll pb-5 scrollbar-hide;
 }
 
 .scrollbar-hide {
@@ -44,5 +44,13 @@
 }
 
 .button {
-    @apply px-7 py-2 rounded-xl uppercase cursor-pointer;
+    @apply  py-2 rounded-xl uppercase cursor-pointer text-sm;
+}
+
+.form-input {
+  @apply mt-3 block w-full px-3 py-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm;
+}
+
+.column-sm {
+  @apply h-[70px] w-full relative grid grid-cols-9  gap-3 items-center ;
 }
